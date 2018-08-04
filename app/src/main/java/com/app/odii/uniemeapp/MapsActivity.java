@@ -62,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 which==6 || which==7){
                             AlertDialog.Builder cate = new AlertDialog.Builder(c);
                             cate.setTitle("Emergency Categories");
-                            cate.setItems(new String[]{"100L", "200L", "300L", "400L", "500L", "General"
+                            cate.setItems(new String[]{"100L", "200L", "300L", "400L", "500L", "Staff","General"
 
                             }, new DialogInterface.OnClickListener() {
                                 @Override
@@ -71,7 +71,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                             || which2==3 || which2==4 || which2==5){
 //                                        AlertDialog.Builder cont = new AlertDialog.Builder(c);
 //                                        cont.setView()
-                                        Toast.makeText(MapsActivity.this, "success", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(MapsActivity.this, "Notification Sent", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             }); cate.create().show();
